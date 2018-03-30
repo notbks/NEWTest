@@ -1,0 +1,41 @@
+dim是定义一个变量
+set是给变量赋值
+
+request.form[]用于获取post提交的表单
+request.queryString[""]用于获取get方法传递的参数
+
+Response.Cookies("name") ="whj";设置cookie，也可以存储键值对（一个对象下的多个属性）
+name =Request.Cookies("name");获取cookie
+
+Session
+结束回话：
+	1：Session.Timeout =5   (分钟)
+	2：Session.Abandon	(立即失效)
+
+获取参数的值
+	遍历StaticObjects集合
+
+Application
+锁定Lock方法Applica.Lock，锁定后，用户无法改变Application的值，除了正在访问的用户
+解锁用Unlock
+
+#include指令比脚本先执行
+
+Global.asa文件（有点监听器的意思）
+    Application 事件
+    Session 事件
+    <object> 声明
+    TypeLibrary 声明
+    #include 指令
+
+Server对象：用于访问有关服务器的属性和方法
+
+ASPError对象：用于显示在asp文件的脚本中发生的错误信息
+
+FileSystemObject对象：用于访问服务器上的文件系统
+
+TextStream对象：用于访问文本文件的内容
+
+File对象：用于返回关于指定文件的信息
+
+Folder对象：用于返回关于指定文件夹的信息
